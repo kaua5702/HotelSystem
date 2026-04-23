@@ -52,9 +52,9 @@ com.kauabiscotto.HotelSystem/ │
 ## ▶️ How to Run
 1. Clone this repository or copy the files into your Java project.  
 2. Compile the classes:  
-   ```bash
-   javac com/kauabiscotto/HotelSystem/*.java
-   ```
+```bash
+javac com/kauabiscotto/HotelSystem/*.java
+```
 3. Run the Main class:
 ```
 java com.kauabiscotto.HotelSystem.Main
