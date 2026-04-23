@@ -5,6 +5,7 @@ A simple hotel reservation system built in Java to practice Object-Oriented Prog
 ---
 
 ## 📌 Features
+
 - **Room Management**  
 - Create rooms with ID, type, price, and status.  
 - Occupy and release rooms.  
@@ -13,6 +14,8 @@ A simple hotel reservation system built in Java to practice Object-Oriented Prog
 - **Guest Management**  
 - Store guest information (name, CPF, cellphone, email).  
 - Display guest details.  
+
+--
 
 - **Reservation Management**  
 - Create reservations linking a guest and a room.  
