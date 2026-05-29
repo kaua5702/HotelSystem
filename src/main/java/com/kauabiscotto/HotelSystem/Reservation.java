@@ -4,6 +4,7 @@ import java.time.temporal.ChronoUnit;
 
 public class Reservation {
 
+    private int id;
     private Guest guest;
     private Room room;
     private LocalDate entryDate;
@@ -16,6 +17,14 @@ public class Reservation {
         this.room = room;
         this.entryDate = entryDate;
         this.departureDate = departureDate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Guest getGuest() {

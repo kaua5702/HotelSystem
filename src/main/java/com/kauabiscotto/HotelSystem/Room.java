@@ -34,6 +34,9 @@ public class Room {
         return status;
     }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public boolean checkAvailability() {
         if (status.equals("available")) {
