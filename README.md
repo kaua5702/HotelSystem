@@ -1,46 +1,46 @@
 # Hotel System 🏨
 
-A hotel reservation system built in Java, practicing **Object-Oriented Programming (OOP)** and **database integration** with JDBC and MySQL.
+Sistema de reservas de hotel desenvolvido em Java, praticando **Programação Orientada a Objetos (POO)** e **integração com banco de dados** usando JDBC e MySQL.
 
 ---
 
-## 📌 Features
+## 📌 Funcionalidades
 
-**Room Management**
-- Create rooms with ID, type, price, and status
-- Occupy and release rooms
-- Check availability
+**Gerenciamento de Quartos**
+- Criar quartos com ID, tipo, preço e status
+- Ocupar e liberar quartos
+- Verificar disponibilidade
 
-**Guest Management**
-- Store guest information (name, CPF, cellphone, email)
-- Display guest details
+**Gerenciamento de Hóspedes**
+- Armazenar informações do hóspede (nome, CPF, celular, e-mail)
+- Exibir detalhes do hóspede
 
-**Reservation Management**
-- Create reservations linking a guest and a room
-- Handle entry and departure dates with `LocalDate`
-- Calculate total stay value based on number of days × room price
-- Confirm and cancel reservations (updates room status)
-- Display full reservation details
+**Gerenciamento de Reservas**
+- Criar reservas vinculando um hóspede e um quarto
+- Gerenciar datas de entrada e saída com `LocalDate`
+- Calcular o valor total da estadia com base no número de dias × preço do quarto
+- Confirmar e cancelar reservas (atualiza o status do quarto)
+- Exibir detalhes completos da reserva
 
-**Database Integration**
-- Persist all data in a MySQL database via JDBC
-- DAO pattern for `Guest`, `Room`, and `Reservation`
-- Credentials managed securely via `db.properties`
+**Integração com Banco de Dados**
+- Persistir todos os dados em um banco MySQL via JDBC
+- Padrão DAO para `Guest`, `Room` e `Reservation`
+- Credenciais gerenciadas com segurança via `db.properties`
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Tecnologias
 
 - Java 17+
 - MySQL 8+
 - JDBC (mysql-connector-java 8.0.33)
 - Maven
-- `java.time.LocalDate` and `ChronoUnit` for date handling
-- Object-Oriented Programming principles
+- `java.time.LocalDate` e `ChronoUnit` para manipulação de datas
+- Princípios de Programação Orientada a Objetos
 
 ---
 
-## 📂 Project Structure
+## 📂 Estrutura do Projeto
 
 ```
 com.kauabiscotto.HotelSystem/
@@ -61,9 +61,9 @@ com.kauabiscotto.HotelSystem/
 
 ---
 
-## 🗄️ Database Setup
+## 🗄️ Configuração do Banco de Dados
 
-Run the following SQL script in MySQL Workbench (with your database selected):
+Execute o seguinte script SQL no MySQL Workbench (com o seu banco de dados selecionado):
 
 ```sql
 CREATE TABLE rooms (
@@ -95,37 +95,37 @@ CREATE TABLE reservations (
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ Configuração das Credenciais
 
-Create the file `src/main/resources/db.properties` with your database credentials:
+Crie o arquivo `src/main/resources/db.properties` com as credenciais do seu banco:
 
 ```properties
-db.url=jdbc:mysql://localhost:3306/your_database
-db.user=your_user
-db.password=your_password
+db.url=jdbc:mysql://localhost:3306/seu_banco
+db.user=seu_usuario
+db.password=sua_senha
 ```
 
-> ⚠️ Add `src/main/resources/db.properties` to your `.gitignore` to avoid exposing credentials.
+> ⚠️ Adicione `src/main/resources/db.properties` ao seu `.gitignore` para evitar expor suas credenciais.
 
 ---
 
-## ▶️ How to Run
+## ▶️ Como Executar
 
-1. Clone this repository:
+1. Clone este repositório:
 ```bash
 git clone https://github.com/kaua5702/HotelSystem.git
 ```
 
-2. Set up the database and configure `db.properties` as described above.
+2. Configure o banco de dados e o `db.properties` conforme descrito acima.
 
-3. Run the project through your IDE (IntelliJ IDEA recommended) or via Maven:
+3. Execute o projeto pela sua IDE (recomendado IntelliJ IDEA) ou via Maven:
 ```bash
 mvn compile exec:java -Dexec.mainClass="com.kauabiscotto.HotelSystem.Main"
 ```
 
 ---
 
-## 📊 Example Output
+## 📊 Exemplo de Saída
 
 ```
 Guest salvo! ID gerado: 1
